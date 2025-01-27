@@ -17,7 +17,7 @@ public class AccountServices {
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_TEZ17S2CIEzgqRcBnb0");
+			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_ethan913");
 			pst=con.prepareStatement("insert into accounts values(?,?,?,?)");
 			pst.setInt(1, obj.getAccno());
 			pst.setString(2, obj.getAccnm());
@@ -46,7 +46,7 @@ public class AccountServices {
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_TEZ17S2CIEzgqRcBnb0");
+			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_ethan913");
 			pst=con.prepareStatement("select * from accounts where accno=?");
 			pst.setInt(1, accno);
 			rs=pst.executeQuery();
@@ -88,7 +88,7 @@ public class AccountServices {
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_TEZ17S2CIEzgqRcBnb0");
+			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_ethan913");
 			st=con.createStatement();
 			rs=st.executeQuery("select * from accounts");
 			
@@ -122,7 +122,7 @@ public class AccountServices {
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_TEZ17S2CIEzgqRcBnb0");
+			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_ethan913");
 			if(trtype.equals("deposit"))
 				pst=con.prepareStatement("update accounts set balance=balance+? where accno=?");
 			else
@@ -157,7 +157,7 @@ public class AccountServices {
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_TEZ17S2CIEzgqRcBnb0");
+			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_ethan913");
 			cst=con.prepareCall("{call transfer(?,?,?,?)}");
 			cst.setInt(1, fno);
 			cst.setInt(2, tno);
@@ -182,7 +182,7 @@ public class AccountServices {
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_TEZ17S2CIEzgqRcBnb0");
+			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_ethan913");
 			pst=con.prepareStatement("delete from accounts where accno=?");
 			pst.setInt(1, accno);
 			int cnt=pst.executeUpdate();
