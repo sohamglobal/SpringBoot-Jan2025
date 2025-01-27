@@ -15,7 +15,7 @@ public class UserServices {
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_TEZ17S2CIEzgqRcBnb0");
+			con=DriverManager.getConnection("jdbc:mysql://mysql-java-javaee-project.c.aivencloud.com:19179/sharayudb?user=avnadmin&password=AVNS_ethan913");
 			pst=con.prepareStatement("select * from bankadmin where userid=? and pswd=?");
 			pst.setString(1, uid);
 			pst.setString(2, psw);
