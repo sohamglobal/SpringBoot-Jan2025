@@ -5,6 +5,6 @@ Spring Boot 3.4.2 projects. It includes - Web, JDBC, Spring data JPA, Spring dat
 
 **jpabankadmin project-** spring boot web application with Spring Data JPA
 
-**restaccountoperations project-** spring boot REST API application
+**restaccountoperations project-** spring boot REST API application with JPA
 
 Developed by Praffull.
